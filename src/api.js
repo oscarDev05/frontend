@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:5227/api';
+const API_URL = 'https://backend-dayk.onrender.com/api';
 
 const api = axios.create({
     baseURL: API_URL,
