@@ -19,7 +19,7 @@ export const MessageNotificationsProvider = ({ children }) => {
     if (!currentUser?.id) return;
 
     const connection = new signalR.HubConnectionBuilder()
-      .withUrl(`http://localhost:5227/chatHub?userId=${currentUser.id}`, { withCredentials: true })
+      .withUrl(`https://backend-dayk.onrender.com/chatHub?userId=${currentUser.id}`, { withCredentials: true })
       .withAutomaticReconnect()
       .build();
 
