@@ -78,7 +78,7 @@ function ChatComponent({ selectedUserId }) {
         }
 
         const connection = new signalR.HubConnectionBuilder()
-            .withUrl(`http://localhost:5227/chatHub?userId=${currentUser.id}&conversationId=${conversationId}`, {
+            .withUrl(`https://backend-dayk.onrender.com/chatHub?userId=${currentUser.id}&conversationId=${conversationId}`, {
                 withCredentials: true
             })
             .withAutomaticReconnect()
