@@ -7,6 +7,7 @@ const api = axios.create({
     headers: {
         'Content-Type': 'application/json',
     },
+    withCredentials: true // <-- Esto es imprescindible para que se envíen cookies o credenciales entre dominios
 });
 
 export default api;
